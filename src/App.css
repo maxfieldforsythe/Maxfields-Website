@@ -1,3 +1,6 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+
 html,
 body {
   width: 100%;
@@ -104,4 +107,37 @@ body {
 
 .sidebar .ant-form-item-control {
   line-height: 29px;
+}
+
+.each-fade {
+  display: flex;
+}
+
+.each-fade  img {
+  width: 75%;
+}
+
+.each-fade h2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}
+
+.center{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.centerText{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }

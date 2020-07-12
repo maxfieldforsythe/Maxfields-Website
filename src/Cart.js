@@ -5,7 +5,7 @@ import React, {Component, memo, useState , Fragment, Button} from 'react'
 
 import Peter from './assets/Peter.jpg'
 
-class App extends Component {
+class Cart extends Component {
   render() {
     return(
         <div style={{backgroundColor: 'black'}}>
@@ -16,4 +16,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Cart;
