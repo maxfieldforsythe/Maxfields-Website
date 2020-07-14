@@ -17,7 +17,7 @@ export default class Product extends Component {
                     <Link to='/details'>
                         <img src={img} alt='product' className='card-img-top'/>                
                     </Link>
-                    <button className='cart-btn' omClick={() => {
+                    <button className='cart-btn' onClick={() => {
                         value.addToCart(id);
                     }}>
                         Cart
@@ -43,7 +43,6 @@ const ProductWrapper = styled.div`
     border-color: transparent;
     transitions: all 1s linear;
 }
-
 .card-footer{
     background: black;
     color: white;
@@ -55,25 +54,20 @@ const ProductWrapper = styled.div`
         border:0.04rem solid rgba()
     }
 }
-
 .img-container {
     position: relative;
     overflow: hidden;
 }
-
 .card-img-top {
     transition: all 1s linear;
 }
-
 .img-container:hover .card-img-top {
     transform: scale(1.2);
     transition: all 0.5s linear;
 }
-
 .cart-btn {
     position: absolute;
     bottom: 0;
     right: 0;
-
 }
 `

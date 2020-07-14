@@ -1,35 +1,35 @@
-import React from 'react';
+import React, {Component} from 'react';
+import {Link} from 'react-router-dom'
 import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
 import styled from 'styled-components';
-const Styles = styled.div`
-  .navbar { background-color: #7c02b5; }
-  a, .navbar-nav, .navbar-light .nav-link {
-    color: 'black';
-    &:hover { color: white; }
+
+export default class NavBar extends Component {
+  render() {
+    return(
+      <nav className='navbar navbar-expand-sm bg-primary navbar-dark px-sm-5'>
+        <Link to='/'>
+        </Link>
+        <ul className='navbar-nav align-items-center'>
+          <li className='nav-item ml-5'>
+              Wintermoon Studios
+          </li>
+        </ul>
+        <Link to='/about' className='ml-auto'>
+          <button className='btn btn-outline-dark text-capitalize'>
+            About
+          </button>
+        </Link>
+        <Link to='/shop' className='ml-auto'>
+          <button>
+            Store
+          </button>
+        </Link>
+        <Link to='/cart' className='ml-auto'>
+          <button>
+            Cart
+          </button>
+        </Link>
+      </nav>
+    )
   }
-  .navbar-brand {
-    font-size: 1.4em;
-    color: 'black';
-    &:hover { color: white; }
-  }
-  .form-center {
-    position: absolute !important;
-    left: 25%;
-    right: 25%;
-  }
-`;
-export const NavigationBar = () => (
-  <Styles>
-    <Navbar expand="lg">
-      <Navbar.Brand href="/">Wintermoon Studios</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-      
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Item><Nav.Link href="/shop">Shop</Nav.Link></Nav.Item> 
-          <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
-  </Styles>
-)
+}

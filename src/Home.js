@@ -4,9 +4,6 @@ import { NavigationBar } from './NavBar.js';
 import React, {Component, memo, useState , Fragment, Button} from 'react'
 import ImageGallery from 'react-image-gallery';
 
-import About from './About.js'
-import Shop from './Shop.js'
-
 import logo from './assets/PFDesigns/slide7new.jpg'
 import pic1 from './assets/PFDesigns/slide1.jpg'
 import pic2 from './assets/PFDesigns/slid2.jpg'
